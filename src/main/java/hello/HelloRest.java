@@ -16,6 +16,14 @@ public class HelloRest {
 		return "Hello World";
 	}
 	
+	@RequestMapping(value = "/helloAgain",method = { RequestMethod.GET} )
+	@ResponseBody
+	public String sayHelloAgain(){
+		System.out.println("Comming Here hello.............");
+		return "Hello World again";
+	}
+	
+	
 	@RequestMapping(value = "/user",method = { RequestMethod.GET} )
 	public User sayHelloToUser(){
 		System.out.println("Comming Here User .............");
