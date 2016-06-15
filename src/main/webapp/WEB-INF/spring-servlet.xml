@@ -15,5 +15,9 @@
         <property name="prefixJson" value="false"/>
         <property name="supportedMediaTypes" value="application/json"/>
     </bean>
+    <bean id="mongoClient" class="com.mongodb.MongoClient">
+        <constructor-arg type="java.lang.String" value="localhost"/>
+        <constructor-arg type="int" value="27017"/>
+    </bean>
     
 </beans>
