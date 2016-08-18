@@ -16,7 +16,7 @@ public class HelloRest {
 	@RequestMapping(value = "/hi",method = { RequestMethod.GET} )
 	@ResponseBody
 	public String sayHello(){
-		System.out.println("Comming Here hello..hi how are you ...........");
+		System.out.println("Comming Here hello..hi how are you ...........i am fine");
 		return "Hello World";
 	}
 	@RequestMapping(value = "/hello",method = { RequestMethod.GET} )
